@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_layout"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="76px"
+        android:textSize="40px"
+        android:textColor="@color/text_default"
+        android:text="请输入短信验证码"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="23px"
+        android:text="短信验证码发送至123 2387 687"/>
+
+    <com.crf.ix.widget.view.PasswordView
+        android:id="@+id/codelogin_passwordview"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingRight="0px"
+        android:paddingLeft="0px"
+        android:layout_marginTop="66px"
+        app:mode="underline"
+        app:cipherEnable="false"
+        app:passwordLength="6" />
+
+    <TextView
+        android:id="@+id/code_text_time_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="40px"
+        android:textSize="30px"
+        android:text="22s后重新发送"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

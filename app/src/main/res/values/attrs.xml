@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textFieldStyle" format="reference"/>
+    <!--加载进度-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordPadding" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="cursorFlashTime" format="integer" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger_inner_circle" format="color" />
+        <attr name="color_no_finger_outer_circle" format="color" />
+        <attr name="color_finger_on" format="color" />
+        <attr name="color_finger_up" format="color" />
+        <attr name="count" format="integer" />
+        <attr name="tryTimes" format="integer" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="OptionItemView">
+        <attr format="string" name="title"/>
+        <attr format="dimension" name="title_size"/>
+        <attr format="color" name="title_color"/>
+        <attr format="reference|color" name="left_src"/>
+        <attr format="string" name="left_text"/>
+        <attr format="dimension" name="left_text_size"/>
+        <attr format="dimension" name="left_image_margin_left"/>
+        <attr format="dimension" name="left_text_margin_left"/>
+        <attr format="dimension" name="left_image_margin_right"/>
+        <attr format="color" name="left_text_color"/>
+        <attr format="reference|color" name="right_src"/>
+        <attr format="string" name="right_text"/>
+        <attr format="dimension" name="right_text_size"/>
+        <attr format="dimension" name="right_image_margin_left"/>
+        <attr format="dimension" name="right_image_margin_right"/>
+        <attr format="dimension" name="right_text_margin_right"/>
+        <attr format="color" name="right_text_color"/>
+        <attr format="boolean" name="splite_mode"/>
+    </declare-styleable>
+
+
+</resources>

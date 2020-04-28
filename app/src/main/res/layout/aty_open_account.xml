@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_layout"></include>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="27px"
+            android:paddingBottom="27px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default"
+                android:layout_marginLeft="50px"
+                android:textSize="32px"
+                android:text="真实姓名"/>
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/open_account_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:hint="输入真实姓名"
+                android:background="@null"
+                android:lines="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_marginLeft="50px"
+            style="@style/Line"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="27px"
+            android:paddingBottom="27px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default"
+                android:layout_marginLeft="50px"
+                android:textSize="32px"
+                android:text="身份证号"/>
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/open_account_edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:hint="输入身份证号"
+                android:background="@null"
+                android:lines="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="27px"
+            android:paddingBottom="27px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default"
+                android:layout_marginLeft="50px"
+                android:textSize="32px"
+                android:text="银行卡号"/>
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/open_account_edit_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:hint="输入银行卡号"
+                android:background="@null"
+                android:lines="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_marginLeft="50px"
+            style="@style/Line"></View>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="27px"
+            android:paddingBottom="27px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default"
+                android:layout_marginLeft="50px"
+                android:textSize="32px"
+                android:text="预留手机号"/>
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/open_account_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:hint="13476183516"
+                android:background="@null"
+                android:lines="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_marginLeft="50px"
+            style="@style/Line"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="27px"
+            android:paddingBottom="27px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_default"
+                android:layout_marginLeft="50px"
+                android:textSize="32px"
+                android:text="验证码"/>
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/open_account_edit_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:hint="13476183516"
+                android:background="@null"
+                android:lines="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/open_account_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:button="@drawable/checkbox_style"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:textSize="26px"
+            android:text="我已阅读并同意《网贷客户交易结算资金账户三方协议》、《数字证书服务协议》"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/open_account_btn_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/shape_button"
+        android:textColor="@color/white"
+        android:textSize="34px"
+        android:text="开通存管账户"/>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

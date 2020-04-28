@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="44px"
+        android:text="提示"
+        android:textSize="38px"
+        android:textColor="@color/text_default"/>
+
+
+    <TextView
+        android:id="@+id/dialog_custom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="3px"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="18px"
+        android:layout_marginRight="42px"
+        android:layout_marginBottom="32px"
+        android:text="签到成功，获得200积分"
+        android:gravity="center"
+        android:textSize="30px" />
+    <View
+        style="@style/Line"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_custom_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/text_default"
+            android:text="取消"
+            android:background="@drawable/bottom_left_corner_selected"
+            android:textSize="36px"/>
+
+        <View
+            style="@style/Line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/dialog_custom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:text="立即开通"
+            android:textSize="36px"
+            android:background="@drawable/bottom_right_corner_selected"
+            android:textColor="@color/dialog_confirm"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

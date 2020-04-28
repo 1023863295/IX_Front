@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mine_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="个人资料"/>
+
+    <TextView
+        android:id="@+id/mine_user_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="信息"/>
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:layout_marginTop="200px"
+        android:id="@+id/mine_item_login"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:left_text_margin_left="50px"
+        app:right_text_margin_right="50px"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/selector_common_item"
+        app:left_text="登录">
+    </com.crf.ix.widget.view.OptionItemView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white">
+        
+        <com.crf.ix.widget.view.OptionItemView
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            app:left_src="@drawable/wd_amount"
+            android:textColor="@color/text_default"
+            app:left_image_margin_left="50px"
+            app:left_text="账户余额"/>
+
+        <TextView
+            android:id="@+id/mine_text_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:gravity="center_vertical"
+            android:padding="20px"
+            android:text="提现"/>
+
+        <TextView
+            android:id="@+id/mine_text_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/mine_text_withdraw"
+            android:gravity="center_vertical"
+            android:layout_marginRight="30px"
+            android:padding="20px"
+            android:textColor="@color/start_color"
+            android:text="充值"/>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line_color"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:layout_toLeftOf="@id/mine_text_recharge">
+        </View>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_marginLeft="112px"
+        style="@style/Line"></View>
+
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/mine_red_packets"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:right_text_margin_right="50px"
+        app:left_image_margin_left="50px"
+        app:left_src="@drawable/wd_redpacket"
+        app:right_src="@drawable/arrow_right"
+        app:left_text_size="16dp"
+        android:background="@drawable/selector_common_item"
+        app:left_text="我的红包">
+    </com.crf.ix.widget.view.OptionItemView>
+    <View
+        android:layout_marginLeft="112px"
+        style="@style/Line"></View>
+
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/mine_lend"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:right_text_margin_right="50px"
+        app:left_text_size="16dp"
+        app:left_image_margin_left="50px"
+        app:left_src="@drawable/wd_lend"
+        app:right_src="@drawable/arrow_right"
+        android:background="@drawable/selector_common_item"
+        app:left_text="我的出借">
+    </com.crf.ix.widget.view.OptionItemView>
+    <View
+        android:layout_marginLeft="112px"
+        style="@style/Line"></View>
+
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/mine_cash_flow"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:right_text_margin_right="50px"
+        app:left_src="@drawable/wd_cash_flow"
+        app:left_image_margin_left="50px"
+        app:right_src="@drawable/arrow_right"
+        app:left_text_size="16dp"
+        android:background="@drawable/selector_common_item"
+        app:left_text="现金流水">
+    </com.crf.ix.widget.view.OptionItemView>
+    <View
+        android:layout_marginLeft="112px"
+        style="@style/Line"></View>
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/mine_common_questions"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:right_text_margin_right="50px"
+        app:left_text_size="16dp"
+        app:left_image_margin_left="50px"
+        app:left_src="@drawable/wd_questions"
+        app:right_src="@drawable/arrow_right"
+        android:background="@drawable/selector_common_item"
+        app:left_text="常见问题">
+    </com.crf.ix.widget.view.OptionItemView>
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/mine_setting"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:right_text_margin_right="50px"
+        android:layout_marginTop="20px"
+        app:left_image_margin_left="50px"
+        app:left_src="@drawable/wd_invite"
+        app:right_src="@drawable/arrow_right"
+        app:left_text_size="16dp"
+        android:background="@drawable/selector_common_item"
+        app:left_text="设置">
+    </com.crf.ix.widget.view.OptionItemView>
+    
+</com.zhy.autolayout.AutoLinearLayout>

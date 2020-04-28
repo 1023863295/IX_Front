@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="88px">
+
+    <ImageView
+        android:id="@+id/head_img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/head_return"/>
+
+    <TextView
+        android:id="@+id/head_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_default"
+        android:textSize="34px"
+        android:text="title"/>
+
+    <TextView
+        android:id="@+id/head_text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="44px"
+        android:visibility="invisible"/>
+    
+    <TextView
+        style="@style/Line"
+        android:layout_alignParentBottom="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        layout="@layout/head_layout"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:textSize="40px"
+        android:textColor="@color/text_default"
+        android:layout_marginTop="76px"
+        android:text="@string/login_tips"/>
+
+    <com.crf.ix.widget.view.ClearEditText
+        android:id="@+id/login_edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="112px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="62px"
+        android:textColorHint="@color/edit_hint_color"
+        android:hint="@string/write_telephone"
+        android:background="@null"
+        android:inputType="number"
+        android:maxLength="11"
+        android:lines="1" />
+
+    <View
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        style="@style/Line">
+    </View>
+
+    <Button
+        android:id="@+id/login_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:textSize="34px"
+        android:background="@drawable/shape_button"
+        android:textColor="@color/white"
+        android:text="@string/next"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_layout"></include>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_top_corner"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:id="@+id/recharge_text_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_default"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="30px"
+            android:textSize="28px"
+            android:text="当前银行卡"/>
+        <TextView
+            android:id="@+id/recharge_text_bankname"
+            android:layout_toRightOf="@id/recharge_text_lable"
+            android:layout_alignTop="@id/recharge_text_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/jianhang_logo"
+            android:drawablePadding="24px"
+            android:textSize="28px"
+            android:text="建设银行"/>
+
+        <TextView
+            android:id="@+id/recharge_text_tips"
+            android:layout_below="@id/recharge_text_bankname"
+            android:layout_alignLeft="@id/recharge_text_bankname"
+            android:paddingLeft="56px"
+            android:layout_marginTop="12px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:textSize="28px"
+            android:text="单笔最高5万，单日限额20万"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bottom_corner"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:paddingTop="30px"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingBottom="48px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额"
+            android:textSize="32px"
+            android:textColor="@color/text_default"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="126px"
+            android:layout_marginTop="24px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="65px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_default"
+                android:text="￥"/>
+
+            <com.crf.ix.widget.view.ClearEditText
+                android:id="@+id/recharge_edit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@color/text_default"
+                android:background="@null"
+                android:maxLength="9"
+                android:textSize="90px"
+                android:inputType="numberDecimal"
+                android:hint="0">
+            </com.crf.ix.widget.view.ClearEditText>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/Line"></View>
+
+
+        <TextView
+            android:id="@+id/recharge_text_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:textSize="28px"
+            android:text="账户余额：400.90   全部提现"></TextView>
+
+        <Button
+            android:id="@+id/recharge_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:textSize="34px"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:text="下一步"
+            android:layout_marginTop="72px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/recharge_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10px"
+                android:button="@drawable/checkbox_style"
+                android:background="@null"
+                android:checked="true"
+                android:text="我同意"/>
+
+            <TextView
+                android:id="@+id/recharge_text_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28px"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="《用户快捷充值协议》"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

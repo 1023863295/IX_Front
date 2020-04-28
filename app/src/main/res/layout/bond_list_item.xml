@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingBottom="30px"
+    android:paddingTop="20px">
+
+    <TextView
+        android:id="@+id/bond_list_item_text_no"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:text="债券编号X123132"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_discount"
+        android:layout_toRightOf="@id/bond_list_item_text_no"
+        android:layout_marginLeft="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:textColor="@color/start_color"
+        android:text="折让0.01%"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_rate"
+        android:layout_below="@id/bond_list_item_text_no"
+        android:layout_marginTop="40px"
+        android:layout_width="180px"
+        android:layout_height="78px"
+        android:textSize="56px"
+        android:textColor="@color/text_blue"
+        android:text="12.00%"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_price"
+        android:layout_toRightOf="@id/bond_list_item_text_rate"
+        android:layout_width="160px"
+        android:layout_height="78px"
+        android:layout_marginLeft="40px"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/bond_list_item_text_rate"
+        android:textSize="30px"
+        android:textColor="@color/text_blue"
+        android:text="4500.00"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_date"
+        android:layout_toRightOf="@id/bond_list_item_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="78px"
+        android:layout_marginLeft="40px"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/bond_list_item_text_rate"
+        android:textSize="30px"
+        android:textColor="@color/text_blue"
+        android:text="15天"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_income"
+        android:layout_below="@id/bond_list_item_text_rate"
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:paddingLeft="10px"
+        android:textColor="@color/edit_hint_color"
+        android:text="预期收益"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_price_lable"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_alignTop="@id/bond_list_item_text_income"
+        android:layout_toRightOf="@id/bond_list_item_text_income"
+        android:textSize="24px"
+        android:textColor="@color/edit_hint_color"
+        android:text="转让价格(元)"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_left_date"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bond_list_item_text_price_lable"
+        android:layout_alignTop="@id/bond_list_item_text_price_lable"
+        android:textSize="24px"
+        android:layout_marginLeft="30px"
+        android:textColor="@color/edit_hint_color"
+        android:text="剩余天数(天)"/>
+
+    <TextView
+        android:id="@+id/bond_list_item_text_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/corner_text_bg"
+        android:gravity="center"
+        android:paddingRight="20px"
+        android:paddingLeft="20px"
+        android:layout_marginRight="10px"
+        android:text="立即购买"/>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

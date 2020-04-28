@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/buy_bond_top"
+        layout="@layout/head_layout"></include>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/buy_bond_rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:layout_below="@id/buy_bond_top">
+        <include
+            layout="@layout/bond_layout"></include>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37px"
+            android:layout_marginTop="66px"
+            android:background="@drawable/left_date_bg"
+            android:layout_alignParentRight="true"
+            android:paddingRight="35px"
+            android:paddingLeft="20px"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10px"
+            android:textColor="@color/white"
+            android:textSize="22px"
+            android:text="剩余15天"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/buy_bond_blance"
+        android:layout_below="@id/buy_bond_rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        app:left_text="账户余额(元)"
+        android:layout_marginTop="20px"
+        android:paddingLeft="20px"
+        app:right_text="1000.00"/>
+
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/buy_bond_amount"
+        android:layout_below="@id/buy_bond_blance"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:layout_height="50px"
+        app:left_text="购买金额(元)"
+        app:right_text="1000.00"/>
+    <com.crf.ix.widget.view.OptionItemView
+        android:id="@+id/buy_bond_reward"
+        android:layout_below="@id/buy_bond_amount"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_height="50px"
+        app:left_text="预期回报(元)"
+        app:right_text="1000.00"/>
+
+
+
+
+    <Button
+        android:id="@+id/buy_bond_btn_buy"
+        android:layout_below="@id/buy_bond_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/shape_button"
+        android:textColor="@color/white"
+        android:textSize="34px"
+        android:text="确认购买"/>
+
+
+    <TextView
+        android:id="@+id/buy_bond_text_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="市场有风险，投资需谨慎！"
+        android:textColor="@color/text_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35px"/>
+    <TextView
+        android:id="@+id/buy_bond_text_protocol"
+        android:layout_above="@id/buy_bond_text_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="25px"
+        android:layout_marginLeft="25px"
+        android:textColor="@color/text_default"
+        android:text="购买即视为同意《出借人服务协议》、《借款协议》、《借款协议》补充协议、《数字证书服务协议》、《出借人信息真实性及资金合法性承诺函》"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>
